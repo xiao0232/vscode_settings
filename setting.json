@@ -1,0 +1,105 @@
+{
+  "editor.fontSize": 13,
+  "markdown.preview.fontSize": 16,
+  "markdown.preview.lineHeight": 1.8,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlayHints.fontFamily": "",
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "files.defaultLanguage": "markdown",
+  "files.eol": "\n",
+  "fluent-ui-vscode.accent": "#29f7ff",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown-pdf.footerTemplate": "",
+  "markdown-pdf.headerTemplate": "",
+  "markdown-pdf.outputDirectory": "[[pdf出力先ディレクトリを指定]]",
+  "markdown-preview-enhanced.previewTheme": "none.css",
+  "markdown-preview-github-styles.colorTheme": "light",
+  "prettier.trailingComma": "none",
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoSurround": "languageDefined",
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnType": true
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "other": "on",
+    "strings": "on"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "markdown-pdf.styles": [
+    "[[github-markdown-light.cssのpath]]"
+  ],
+  "markdownlint.config": {
+    "MD022": false,
+    "MD024": false,
+    "MD032": false,
+    "MD033": false
+  },
+  "python.venvFolders": [
+    ".venv",
+    "envs",
+    ".pyenv",
+    ".direnv"
+  ],
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "fluent-ui-vscode.compact": true,
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.includeDefaultStyles": false,
+  "markdown.preview.breaks": true,
+  "python.analysis.autoImportCompletions": true,
+  "security.workspace.trust.emptyWindow": false,
+  "security.workspace.trust.enabled": false,
+  "update.showReleaseNotes": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.enableExperiments": false
+}
