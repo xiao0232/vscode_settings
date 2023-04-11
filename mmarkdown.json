@@ -1,0 +1,95 @@
+{
+  // Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "editor.snippetSuggestions": { "body": "top" },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "new_line": {
+    "prefix": "\\newl",
+    "body": ["<div style=\"page-break-before:always\"></div>", "$1"],
+    "description": "改行を挿入する"
+  },
+  "curly_brackets": {
+    "prefix": "\\{",
+    "body": ["{${TM_SELECTED_TEXT}}$1"],
+    "description": "Enclose in curly brackets"
+  },
+  "limit": {
+    "prefix": "\\lim",
+    "body": ["\\lim_{${1|i,x|} \\rightarrow $2}{$3}"]
+  },
+  "insert_formula": {
+    "prefix": "insert_formula",
+    "body": [
+      "$$",
+      "\\begin{aligned}",
+      "${TM_SELECTED_TEXT}$1\\\\\\",
+      "\\end{aligned}",
+      "$$"
+    ],
+    "description": "formula"
+  },
+  "img": {
+    "prefix": ["![]()", "\\img"],
+    "body": ["![](${1:File_Path})", "$2"],
+    "description": "insert img"
+  },
+  "divide": {
+    "prefix": "\\div",
+    "body": [
+      "$1 = \\left\\{",
+      "\\begin{array}{ll}",
+      "$2 & $3 \\\\\\",
+      "$4 & $5",
+      "\\end{array}",
+      "\\right.",
+      "$6"
+    ],
+    "description": "insert img"
+  },
+  "code": {
+    "prefix": "\\`",
+    "body": ["```$1", "$2", "```", "$3"],
+    "description": "insert code block"
+  },
+  "today": {
+    "prefix": "\\today",
+    "body": ["$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE"],
+    "description": "今日の日付"
+  },
+  "import": {
+    "prefix": ["\\img", "\\image", "//file"],
+    "body": ["@import \"${TM_SELECTED_TEXT}$1\""],
+    "description": "画像・ファイルの挿入"
+  },
+  "url": {
+    "prefix": "\\url",
+    "body": ["[${TM_SELECTED_TEXT}$1]($2)"],
+    "description": "リンクの挿入: [表示名](url)"
+  },
+  "toc": {
+    "prefix": ["\\escape_toc", "\\comment_out_toc", "\\toc"],
+    "body": ["$1 $2 <!-- omit in toc -->"],
+    "description": "目次(TOC)の挿入: [#の個数] [見出し] [tocからの除外]"
+  },
+  "note info": {
+    "prefix": ["\\note", "\\detail"],
+    "body": [
+      "<details>",
+      "<summary>$1</summary>",
+      "\"${TM_SELECTED_TEXT}\"",
+      "</details>"
+    ],
+    "description": "折りたたみブロックの挿入"
+  }
+}
