@@ -1,0 +1,52 @@
+[
+  {
+    "key": "Ctrl+m",
+    "command": "editor.action.insertSnippet",
+    "args": { "langId": "markdown", "name": "insert_formula" },
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+alt+e",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+home",
+    "command": "-cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "text-tables.gotoNextCell",
+    "when": "tableMode"
+  },
+  {
+    "key": "shift+tab",
+    "command": "text-tables.gotoPreviousCell",
+    "when": "tableMode"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.toggleDevTools"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+  }
+]
