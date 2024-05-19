@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "Next.js: debug full stack",
+    //   "type": "node-terminal",
+    //   "request": "launch",
+    //   "command": "npm run dev",
+    //   "serverReadyAction": {
+    //     "pattern": "- Local:.+(https?://.+)",
+    //     "uriFormat": "http://webdev00.com",
+    //     "webRoot": "${workspaceFolder}",
+    //     "action": "debugWithChrome"
+    //   },
+    //   "sourceMaps": true,
+    //   "trace": true,
+    //   "sourceMapPathOverrides": {
+    //     "webpack:///./*": "${webRoot}/src/*"
+    //   },
+    //   "preLaunchTask": "Start Caddy",
+    //   "postDebugTask": "Stop Caddy"
+    // },
+    {
+      "name": "Next.js: start server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    },
+    {
+      "name": "Next.js: attach server",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": ["--remote-debugging-port=9222"],
+      "preLaunchTask": "Start Caddy",
+      "postDebugTask": "Stop Caddy",
+      "port": 9222
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Server/Client",
+      "configurations": ["Next.js: start server", "Next.js: attach server"],
+      "stopAll": true
+    }
+  ]
+}
